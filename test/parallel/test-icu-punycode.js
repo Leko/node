@@ -30,7 +30,7 @@ const fixtures = require('../fixtures/icu-punycode-toascii.json');
 }
 
 {
-  for (const [i, test] of fixtures) {
+  for (const [i, test] of fixtures.entries()) {
     if (typeof test === 'string')
       continue; // skip comments
     const { comment, input, output } = test;

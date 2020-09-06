@@ -9,6 +9,9 @@
   "urlencoded-parser.any.js": {
     "fail": "missing Request and Response"
   },
+  "urlsearchparams-constructor.any.js": {
+    "fail": "missing FormData, etc."
+  },
   "idlharness.any.js": {
     "fail": "getter/setter names are wrong, etc."
   }

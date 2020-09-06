@@ -8,11 +8,11 @@
     "path": "encoding"
   },
   "url": {
-    "commit": "43feb7f612fe9160639e09a47933a29834904d69",
+    "commit": "9ffe8f26432649d02eb81add2816dd5394f57a8c",
     "path": "url"
   },
   "resources": {
-    "commit": "e1fddfbf801e7cce9cac5645e992194e4059ef56",
+    "commit": "993b25d482cb0e76458f384f4a23541506a10563",
     "path": "resources"
   },
   "interfaces": {

@@ -1063,6 +1063,9 @@ void URLHost::ParseHost(const char* input,
   if (unicode && !ToUnicode(decoded, &decoded))
     return;
 
+  if (decoded == "")
+    return;
+
   // It's not an IPv4 or IPv6 address, it must be a domain
   SetDomain(std::move(decoded));
 }
@@ -2083,8 +2086,6 @@ void URL::Parse(const char* input,
           case kEOL:
             url->flags |= URL_FLAGS_HAS_FRAGMENT;
             url->fragment = std::move(buffer);
-            break;
-          case 0:
             break;
           default:
             AppendOrEscape(&buffer, ch, FRAGMENT_ENCODE_SET);
